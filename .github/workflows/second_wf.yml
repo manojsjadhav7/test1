@@ -8,7 +8,7 @@ jobs :
     - name : so
       uses : actions/checkout@v2
     - name : st
-      run : echo testing
+      run : echo $GITHUB_ACTOR
   
   job2 : 
     name : second
