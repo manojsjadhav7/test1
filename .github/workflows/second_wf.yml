@@ -8,7 +8,7 @@ jobs :
     - name : so
       uses : actions/checkout@v2
     - name : st
-      run : env | sort
+      run : echo testing 
   
   job2 : 
     name : second
