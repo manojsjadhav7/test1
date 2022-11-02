@@ -8,7 +8,7 @@ jobs :
     - name : so
       uses : actions/checkout@v2
     - name : st
-      run : echo testing 
+      run : ls
   
   job2 : 
     name : second
