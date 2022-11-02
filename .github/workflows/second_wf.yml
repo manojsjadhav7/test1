@@ -17,4 +17,4 @@ jobs :
     - name : sso
       uses  : actions/checkout@v2
     - name : sst
-      run  : "Get child"
+      run  : "Get-ChildItem Env: | Sort-Object Name"
