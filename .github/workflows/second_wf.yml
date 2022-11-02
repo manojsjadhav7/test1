@@ -1,21 +1,20 @@
 name : second
 on : [ push ]
 jobs :
-
   job1 : 
-  name : first
-  runs-on : ubuntu-latest
-  steps : 
-  - name : so
-  uses : actions/checkout@v2
-  run : 
-   - name : st
+    name : first
+    runs-on : ubuntu-latest
+    steps : 
+    - name : so
+      uses : actions/checkout@v2
+    - name : st
       run : env | sort
   
   job2 : 
-  name : second
-  runs-on : windows-latest
-  steps : sso
-  uses : actions/checkout@v2
-  name - sst
-  run : "Get child"
+    name : second
+    runs-on : windows-latest
+    steps : 
+    - name : sso
+      uses  : actions/checkout@v2
+    - name : sst
+      run  : "Get child"
